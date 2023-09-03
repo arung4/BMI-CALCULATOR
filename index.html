@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Caluclator-by Grow Your Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bmi-calculator">
+        <h1>BMI Calculator</h1>
+        <div class="weight statistics">
+            <span>Weight :</span>
+            <input type="number" value="0" id="weight" required>
+            <select name="units" id="weight-units">
+                <option value="kilogram">Kilogram (kg)</option>
+                <option value="pounds">Pounds (lb)</option>
+            </select>
+        </div>
+
+        <div class="height statistics">
+            <span>Height :</span>
+            <input type="number" value="0" id="height" required>
+            <select name="units" id="height-units">
+                <option value="meter">Meter (m)</option>
+                <option value="centimeter">Centimeter (cm)</option>
+                <option value="inches"> Inches (in)</option>
+                <option value="feet">Feet (ft)</option>
+            </select>
+        </div>
+
+    <div class="buttons">
+        <button id="result">Calculate</button>
+        <button id="clear">Clear</button>
+    </div>
+    
+    <div class="bmi">
+        <h3>BMI</h3>
+        <div id="show-result">00.0</div>
+    </div>
+
+    <div class="health-status">
+   <span class="scenerio" id="underweight">Underweight <p>Below 18.5</p></span>
+   <span class="scenerio" id="normal">Normal <p>(18.5-24.9)</p></span>
+    </div>
+
+    <div class="health-status">
+   <span class="scenerio" id="overweight">Overweight <p>(25.0-29.9)</p></span>
+   <span class="scenerio" id="obese">Normal <p>30.0 and above</p></span>
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Oswald:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,300;1,400;1,600&family=REM:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Tajawal:wght@300&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height:100VH;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color:white;
+    background-color: rgb(187, 198, 172);
+    letter-spacing: 1px;
+   font-family: 'Nunito', sans-serif;
+
+}
+
+.bmi-calculator{
+    background: rgb(46, 42, 53);
+    padding:20px 15px;
+    border-radius: 18px;
+    box-shadow: 5px 8px 8px rgb(17, 17, 17);
+    text-align: center;
+}
+h1{
+    background-color: rgb(96, 143, 54);
+    color:black;
+    border-radius: 8px;
+    padding:6px 0;
+    font-size:30px;
+    padding:4px 0;
+}
+
+.statistics{
+    background-color: rgb(186, 210, 142);
+    margin:10px 0;
+    padding: 8px 7px;
+    box-shadow: -1px 2px 2px black;
+    border-radius: 8px;
+    color:black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.statistics span{
+    font-size: 16px;
+}
+.statistics input{
+    width:60px;
+    text-align: center;
+    font-size: 18px;
+    padding:5px 8px;
+    border: none;
+    /* letter-spacing: 1px; */
+    border-radius: 4px;
+    outline: none;
+}
+.statistics select{
+    text-align: center;
+    width: 170px;
+    outline:none;
+    padding:5px 0px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(250,248,248);
+  color:black;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px rgb(0,0,0,0.1);
+}
+
+.statistics select option{
+    background-color: rgb(250,248,248);
+}
+
+.bmi-calculator button{
+    padding:8px 8px;
+    box-shadow: 3px 3px 3px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    border: none;
+    color:black;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgb(96, 143, 54);
+    transition:.4s;
+}
+.bmi-calculator button:hover{
+    opacity: .9;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bmi{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-weight: 500;
+    font-size: 32px;
+    color:rgb(75, 56, 199);
+}
+#show-result{
+    background-color: rgb(239, 234, 234);
+    padding:5px 15px;
+    margin-bottom: 5px;
+    color:black;
+    /* text-shado; */
+    font-size: 25px;
+    border-radius: 25px;
+    width: 130px;
+    text-shadow:1px 1px 1px black;
+}
+
+.health-status{
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.scenerio{
+    padding:5px 5px;
+    width:150px;
+    font-size: 13px;
+    border-radius: 13px;
+    box-shadow: -1px 2px 2px black;
+}
+
+#underweight{
+    background-color: rgb(178, 172, 6);
+}
+#normal{
+    background-color: rgb(37, 187, 14);
+}
+#overweight{
+    background-color: rgb(246, 185, 3);
+}
+#obese{
+    background-color: rgb(232, 36, 6);
+}
